@@ -11,12 +11,7 @@ for i in range(65, 91):
         # mo trang
         driver.get(url)
         # Doi 1 chut de tai trang
-        time.sleep(3)
-        # # Lay ra tat cac ca the url
-        # ul_tags = driver.find_elements(By.XPATH, "//div[contains(@class,'div-col')]//li")
-        # print(len(ul_tags))
-        # # Chon the ul thu 21
-        # ul_painters = ul_tags[20] 
+        time.sleep(3) 
         # Lay ra tat ca the <li> thuoc ul_painters
         li_tags = driver.find_elements(By.XPATH, "//div[contains(@class,'div-col')]//li")
         print("Số họa sĩ:", len(li_tags))
